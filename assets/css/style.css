@@ -1,3 +1,45 @@
+/* o :root serve para criar variáveis no CSS */
+/* Obrigatoriamente toda variável deve iniciar com -- */
+/* Pode ser utilizado para outros valores, como medidas, mas geralmente é usado para as cores mesmo */
+
+:root{
+    --rosa: #fff0f3; /* usar como fundo */
+    --rosaPastel: #E5989B; /* usar para caixa de texto */
+    --melon: #FFB4A2; /* usar em volta do vídeo e imagem */
+    --branco: #ffffff; /* usar nos textos */
+    --preto: #2b2d42; /* usar nos textos */
+}
+
+/* Estilo da página contato.html e index.html */
+body{
+    background: var(--rosa);
+    font-family: Verdana, sans-serif;
+    color: var(--preto);
+}
+
+
+
+/* Estilos da página index.html */
+.banner{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    align-items: center;
+    border: 1px solid var(--rosaPastel);
+    background-color: var(--rosaPastel);
+    padding: 11rem;
+    border-radius: 3rem;
+    margin: 3%;
+    -webkit-box-shadow: 5px 8px 20px 0px var(--rosaPastel);
+    box-shadow: 5px 8px 20px 0px var(--rosaPastel);
+}
+
+.fotoPerfil {
+
+        border: 5px solid var(--preto); 
+    }
+
+
 /*Estilos da página index.html*/
 .center{ /* Mexer nos parágrafos */
     text-align: center;
@@ -38,8 +80,8 @@
 }
 
 .width-300{/*Para alterar a largura e altura da foto */
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 
 .tamanho-social {
@@ -56,4 +98,29 @@
 
 .ml-50{
     margin-left: 50px;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    color: var(--preto);
+}
+
+.form {
+    width: 45%;
+}
+
+.form form {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(108, 15, 42, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    border: 5px solid rgba(255, 255, 255, 0.18);
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
 }
