@@ -1,0 +1,59 @@
+/*Estilos da página index.html*/
+.center{ /* Mexer nos parágrafos */
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.container{/* Mexer nos parágrafos e na imagem */
+    display: flex;
+    flex-flow:row;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li{/*Mexer no menu*/
+    display: inline;
+    padding: 15px;
+}
+
+#menu li a{/*Mexer no menu*/
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+
+#menu li a:hover{/*Cor do item quando o mouse estiver em cima */
+    color:grey;
+}
+
+.p-30{
+    padding: 30px;
+}
+
+.br-50{/*Para arredondar a foto */
+    border-radius: 50%;
+}
+
+.width-300{/*Para alterar a largura e altura da foto */
+    width: 300px;
+    height: 300px;
+}
+
+.tamanho-social {
+    width: 50px;
+    height: 50px;
+}
+
+.mb-50 { /*Para alterar a margem inferior do vídeo */
+    margin-bottom: 50px;
+}
+
+
+/*Estilos da página contato.html*/
+
+.ml-50{
+    margin-left: 50px;
+}
